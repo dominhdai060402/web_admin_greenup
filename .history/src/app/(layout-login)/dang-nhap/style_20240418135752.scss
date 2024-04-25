@@ -1,0 +1,15 @@
+main {
+  background-image: url("/img/login-bg.png");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.login-section {
+  width: 676px;
+  height: 589px;
+}

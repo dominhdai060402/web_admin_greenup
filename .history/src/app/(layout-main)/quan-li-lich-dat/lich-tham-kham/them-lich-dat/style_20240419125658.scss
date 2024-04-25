@@ -1,0 +1,21 @@
+@import "../../../../../style/variable";
+@import "../../../../../style/base";
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  input[type="text"] {
+    width: 444px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    &:focus {
+      border: 1px solid red;
+    }
+  }
+}

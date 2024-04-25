@@ -1,0 +1,69 @@
+import React from "react";
+import { Select } from "antd";
+import "./style.scss";
+
+export default function page() {
+  return (
+    <section className="section">
+      <h1 className="section-heading">
+        QUẢN LÝ LỊCH ĐẶT/ LỊCH THĂM KHÁM/ THÊM LỊCH ĐẶT
+      </h1>
+      <form action="">
+        <h2>Thông tin lịch đặt</h2>
+        <div className="input-row">
+          <div className="input-group">
+            <label htmlFor="">Loại lịch hẹn</label>
+            <Select
+              defaultValue="Thăm khám"
+              style={{
+                width: 120,
+              }}
+              disabled
+              options={[
+                {
+                  value: "kbBooking",
+                  label: "Thăm khám",
+                },
+              ]}
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="">Số lượng thú cưng</label>
+            <input type="text" placeholder="Nhập số lượng thú cưng" />
+          </div>
+        </div>
+        <div className="input-row">
+          <div className="input-group">
+            <label htmlFor="">Ngày đặt:</label>
+            <Select
+              defaultValue="Thăm khám"
+              style={{
+                width: 120,
+              }}
+              disabled
+              options={[
+                {
+                  value: "kbBooking",
+                  label: "Thăm khám",
+                },
+              ]}
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="">Giờ đặt:</label>
+            <Select
+              defaultValue="lucy"
+              style={{ width: 120 }}
+              options={[
+                { value: "jack", label: "Jack" },
+                { value: "lucy", label: "Lucy" },
+                { value: "Yiminghe", label: "yiminghe" },
+                { value: "disabled", label: "Disabled", disabled: true },
+              ]}
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+  );
+}

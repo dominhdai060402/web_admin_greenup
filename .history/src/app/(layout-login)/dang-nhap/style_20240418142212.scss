@@ -1,0 +1,71 @@
+@import "../../../style/variable.scss";
+@import "../../../style/base.scss";
+
+main {
+  background-image: url("/img/login-bg.png");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 20;
+}
+.login-section {
+  width: 676px;
+  height: 589px;
+  background-color: white;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-heading {
+    color: $BROWN_500;
+    margin: 30px 0 20px 0;
+    font-size: 32px;
+  }
+}
+
+.form {
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .input-group {
+    label {
+      color: $BROWN_500;
+    }
+    input {
+      margin-top: 8px;
+      height: 52px;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 0px 10px;
+      &:focus {
+        border: 1px solid $BROWN_500;
+        box-shadow: 0 0 4px 4px rgba(145, 26, 30, 0.2);
+      }
+    }
+    .custom-eye {
+      position: relative;
+      height: fit-content;
+      img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-36%);
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

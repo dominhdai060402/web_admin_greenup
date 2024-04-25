@@ -1,0 +1,12 @@
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  input[type="text"] {
+    width: 444px;
+    height: 40px;
+  }
+}

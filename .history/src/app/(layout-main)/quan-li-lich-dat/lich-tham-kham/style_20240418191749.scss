@@ -1,0 +1,9 @@
+@import "../../../../style/variable.scss";
+@import "../../../../style/base.scss";
+
+.table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 4fr 2fr 2fr 2fr 2fr 2fr;
+  background-color: white;
+  padding: 4px 0px;
+}

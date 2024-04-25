@@ -1,0 +1,30 @@
+@import "../../../../../style/variable";
+@import "../../../../../style/base";
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+color: $BROWN_500;
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 16px;
+  }
+  label {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    width: 444px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    &:focus {
+      border: 1px solid $BROWN_500;
+    }
+  }
+}

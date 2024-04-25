@@ -1,0 +1,23 @@
+@import "../style/variable.scss";
+@import "../style/base.scss";
+
+.statistical {
+  &-heading {
+    color: $BROWN_500;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  &-content-one {
+    display: flex;
+    gap: 20px;
+    &-item {
+      width: 328px;
+      height: 185px;
+      display: flex;
+      flex-direction: column;
+    }
+    .item-heading {
+      display: flex;
+    }
+  }
+}
