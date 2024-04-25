@@ -1,0 +1,23 @@
+@import "../../../../style/variable.scss";
+@import "../../../../style/base.scss";
+
+.image-choose-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+}
+.image-choose-custom + input {
+  display: none;
+}
+.input-group {
+  label {
+    color: $BROWN_500;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
