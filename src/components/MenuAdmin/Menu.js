@@ -59,10 +59,10 @@ export default function MenuAdmin() {
     if (pathname.match(/quan-li-bai-viet/)) {
       setCurrentSelect("5");
     }
-    if (pathname.match(/quan-li-tai-khoan\/tai-khoan-user/)) {
+    if (pathname.match(/quan-li-tai-khoan\/tai-khoan-admin/)) {
       setCurrentSelect("6");
     }
-    if (pathname.match(/quan-li-tai-khoan\/tai-khoan-admin/)) {
+    if (pathname.match(/quan-li-tai-khoan\/tai-khoan-user/)) {
       setCurrentSelect("7");
     }
     if (pathname.match(/quan-li-dich-vu/)) {
@@ -93,11 +93,11 @@ export default function MenuAdmin() {
     }
     if (e.key === "6") {
       setCurrentSelect("6");
-      router.push("/quan-li-tai-khoan/tai-khoan-user");
+      router.push("/quan-li-tai-khoan/tai-khoan-admin");
     }
     if (e.key === "7") {
       setCurrentSelect("7");
-      router.push("/quan-li-tai-khoan/tai-khoan-admin");
+      router.push("/quan-li-tai-khoan/tai-khoan-user");
     }
     if (e.key === "8") {
       setCurrentSelect("8");

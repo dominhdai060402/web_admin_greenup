@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { Select, DatePicker, Modal, Input } from "antd";
-import "./style.scss";
 import PetItem from "@/components/PetItem/PetItem";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
-import dayjs from "dayjs";
+import Link from "next/link";
+import "../style.scss"
+import AddNewPet from "../chi-tiet-user/AddNewPet";
+import EditAPet from "../chi-tiet-user/EditAPet";
 
 export default function Page() {
     const [numberPet, setNumberPet] = useState(1);
@@ -30,8 +32,9 @@ export default function Page() {
     const handleChangeNumberPet = (e) => {
         setNumberPet(+e.target.value);
     };
+
     const handleBack = () => {
-        router.push("/quan-li-tai-khoan/tai-khoan-admin");
+        router.push("/quan-li-tai-khoan/tai-khoan-user");
     };
     return (
         <section className="section">
@@ -46,19 +49,19 @@ export default function Page() {
                 <p>Bạn có chắc chắn muốn xóa thông tin thú cưng?</p>
             </Modal>
             <h1 className="section-heading">
-                QUẢN LÝ TÀI KHOẢN/ ADMIN/ TẠO TÀI KHOẢN
+                QUẢN LÝ TÀI KHOẢN/ USER/ TẠO TÀI KHOẢN
             </h1>
-            <div className="wrapper" style={{ display: 'flex', width: "100%", background: "white", borderRadius: "10px" }}>
-                <div className="image" style={{ width: "30%" }}>
-                    Ảnh
-                </div>
-                <div style={{borderLeft: "2px solid rgba(0, 0, 0, 0.1)"}}>
-                    <form action="" className="form" style={{ width: "70%", padding: "30px 0 0 20px" }}>
+            <div className="wrapper" style={{ width: "100%", background: "white", borderRadius: "10px", padding: "10px 35px 66px 35px" }}>
+                <div style={{ display: "flex", marginBottom: "30px" }}>
+                    <div className="image" style={{ width: "30%", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                        Ảnh
+                    </div>
+                    <form action="" className="form" style={{ width: "70%", borderLeft: "2px solid rgba(0, 0, 0, 0.1)", padding: "30px 20px" }}>
 
                         <div className="input-row">
                             <div className="input-group">
                                 <label htmlFor="">Tên tài khoản</label>
-                                <input type="text" placeholder="Bùi Quang Trưởng" />
+                                <input type="text" placeholder="Nhập tên tài khoản" />
                             </div>
                         </div>
                         <div className="">
@@ -85,13 +88,13 @@ export default function Page() {
                         <div className="input-row">
                             <div className="input-group">
                                 <label htmlFor="">Email</label>
-                                <input type="text" placeholder="buiquangtruong@gmail.com" />
+                                <input type="text" placeholder="Nhập email..." />
                             </div>
                         </div>
                         <div className="input-row">
                             <div className="input-group">
                                 <label htmlFor="">Số điện thoại</label>
-                                <input type="text" placeholder="0746238999" />
+                                <input type="text" placeholder="Nhập số điện thoại..." />
                             </div>
                         </div>
                         <div className="input-row">
@@ -100,58 +103,7 @@ export default function Page() {
                                 <DatePicker
                                     placeholder="Chọn ngày sinh"
                                     style={{ width: 444, height: 40, border: "1px solid rgba(0, 0, 0, 0.4)", borderRadius: 7 }}
-                                    defaultValue={dayjs("11-05-2002", "DD-MM-YYYY")}
                                 />
-                            </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label htmlFor="">Chức vụ</label>
-                                <input type="text" placeholder="Bác sĩ" />
-                            </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label htmlFor="">Phân quyền</label>
-                                <Select
-                                    placeholder="Lựa chọn"
-                                    style={{ width: 444, height: 40, border: "1px solid rgba(0, 0, 0, 0.4)", borderRadius: 7 }}
-                                    options={[
-                                        {
-                                            value: "admin",
-                                            label: "Quản trị",
-                                        },
-                                        {
-                                            value: "user",
-                                            label: "Người dùng",
-                                        },
-                                    ]}
-                                    defaultValue="Quản trị"
-                                />
-                            </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label htmlFor="">Mật khẩu</label>
-                                <Input.Password defaultValue="buiquangtruong" placeholder="*********" style={{ width: 444, height: 40, border: "1px solid rgba(0, 0, 0, 0.4)", borderRadius: 10 }} />
-                            </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label htmlFor="">Tài khoản Facebook</label>
-                                <input type="text" placeholder="https://abc.com" />
-                            </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label htmlFor="">Tài khoản Instagram</label>
-                                <input type="text" placeholder="https://abc.com" />
-                            </div>
-                        </div>
-                        <div className="input-row">
-                            <div className="input-group">
-                                <label htmlFor="">Tài khoản Tiktok</label>
-                                <input type="text" placeholder="https://abc.com" />
                             </div>
                         </div>
                         <div style={{ marginBottom: "15px" }}>
@@ -168,10 +120,10 @@ export default function Page() {
                             </div>
                         </div>
                     </form>
-                    <div className="" style={{margin: "20px 0 50px 20px"}}>
-                        <button style={{ width: "200px", height: "45px", border: "1px solid #911A1D", borderRadius: "7px", background: "#911A1D", fontWeight: "600", color: "white", cursor: "pointer", marginRight: "25px" }}>Lưu</button>
-                        <button style={{ width: "200px", height: "45px", border: "1px solid #911A1D", borderRadius: "7px", background: "white", fontWeight: "600", color: "#911A1D", cursor: "pointer" }} onClick={handleBack}>Hủy</button>
-                    </div>
+                </div>
+                <div className="" style={{ display: "flex", justifyContent: "space-between" }}>
+                    <button style={{ width: "200px", height: "45px", border: "1px solid #911A1D", borderRadius: "7px", background: "#911A1D", fontWeight: "600", color: "white", cursor: "pointer", marginRight: "25px" }}>Lưu</button>
+                    <button style={{ width: "200px", height: "45px", border: "1px solid #911A1D", borderRadius: "7px", background: "white", fontWeight: "600", color: "#911A1D", cursor: "pointer" }} onClick={handleBack}>Hủy</button>
                 </div>
             </div>
         </section>
