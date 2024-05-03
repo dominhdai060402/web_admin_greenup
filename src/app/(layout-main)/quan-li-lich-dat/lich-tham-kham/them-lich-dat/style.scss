@@ -1,6 +1,9 @@
 @import "../../../../../style/variable";
 @import "../../../../../style/base";
 
+form {
+  width: 905px;
+}
 .input-row {
   display: flex;
   gap: 20px;
