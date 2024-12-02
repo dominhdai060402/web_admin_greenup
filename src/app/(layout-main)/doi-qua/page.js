@@ -126,7 +126,6 @@ export default function Page() {
           <div className="table-column">STT</div>
           <div className="table-column">Mã yêu cầu</div>
           <div className="table-column">Tên khách hàng</div>
-          <div className="table-column">Số điện thoại</div>
           <div className="table-column">Ngày yêu cầu</div>
           <div className="table-column">SL quà yêu cầu</div>
           <div className="table-column">Trạng thái</div>
@@ -137,7 +136,6 @@ export default function Page() {
             <div className="table-column">{index + 1}</div>
             <div className="table-column">{article.title}</div>
             <div className="table-column">{article.ten}</div>
-            <div className="table-column">{article.kl}</div>
             <div className="table-column">{article.diem}</div>
             <div className="table-column">{article.ngay}</div>
             <div className="table-column">{article.tt}</div>
