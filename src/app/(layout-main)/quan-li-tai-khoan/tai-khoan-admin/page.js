@@ -8,168 +8,89 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 
 const { Search } = Input;
-const data = [
+const data = 
+[
   {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
+    "name": "Đỗ Nhật Long",
+    "gender": true,
+    "phoneNumber": "03823376446",
+    "address": "Số 91 Định Công, Hoàng Mai",
+    "score": 10000,
+    "status": true
   },
   {
-    name: "Bùi Quang Trưởng",
-    position: "Bác sĩ",
-    gender: true,
-    phoneNumber: "0975654956",
-    email: "buiquangtruong@gmail.com",
-    status: true,
+    "name": "Trần Hoàng Liên",
+    "gender": false,
+    "phoneNumber": "09643792928",
+    "address": "Số 328 Lê Trọng Tấn, Hoàng Mai",
+    "score": 15000,
+    "status": true
   },
   {
-    name: "Hoàng Minh Hạnh",
-    position: "Bác sĩ",
-    gender: false,
-    phoneNumber: "0977354955",
-    email: "hoangminhhang@gmail.com",
-    status: true,
+    "name": "Nguyễn Văn Tính",
+    "gender": true,
+    "phoneNumber": "09647367434",
+    "address": "Số 32 Chùa Láng, Đống Đa",
+    "score": 41000,
+    "status": true
   },
   {
-    name: "Hoàng Minh Duyên",
-    position: "Bác sĩ",
-    gender: false,
-    phoneNumber: "0557354956",
-    email: "hoangminhduyen@gmail.com",
-    status: true,
+    "name": "Nguyễn Linh Nhi",
+    "gender": false,
+    "phoneNumber": "08635745723",
+    "address": "Số 131 Chùa Láng, Hoàng Mai",
+    "score": 98000,
+    "status": true
   },
   {
-    name: "Hoàng Đức Trung",
-    position: "Nhân viên",
-    gender: true,
-    phoneNumber: "0937324946",
-    email: "hoangductrung@gmail.com",
-    status: true,
+    "name": "Triệu Ngọc Linh",
+    "gender": false,
+    "phoneNumber": "03747829045",
+    "address": "Số 109 Định Công, Hoàng Mai",
+    "score": 8000,
+    "status": true
   },
   {
-    name: "Trần Văn Trung",
-    position: "Nhân viên",
-    gender: true,
-    phoneNumber: "0956354946",
-    email: "tranvantrung@gmail.com",
-    status: true,
+    "name": "Ngô Thị Trúc",
+    "gender": false,
+    "phoneNumber": "03847927499",
+    "address": "Số 33 Lê Trọng Tấn, Hoàng Mai",
+    "score": 900,
+    "status": true
   },
   {
-    name: "Nguyễn Nhâm Quỳnh",
-    position: "Bác sĩ",
-    gender: false,
-    phoneNumber: "0337354955",
-    email: "nguyennhamquynh@gmail.com",
-    status: true,
+    "name": "Nguyễn Minh Tú",
+    "gender": false,
+    "phoneNumber": "03648894402",
+    "address": "Số 5 Trương Định, Hoàng Mai",
+    "score": 11000,
+    "status": true
   },
   {
-    name: "Trần Văn Linh",
-    position: "Bác sĩ",
-    gender: true,
-    phoneNumber: "0975554956",
-    email: "tranvanlinh@gmail.com",
-    status: true,
+    "name": "Tạ Văn Quang",
+    "gender": true,
+    "phoneNumber": "09847478444",
+    "address": "Số 101 Tân Mai, Hoàng Mai",
+    "score": 8000,
+    "status": true
   },
   {
-    name: "Nguyễn Thị Thảo",
-    position: "Nhân viên",
-    gender: false,
-    phoneNumber: "0977771956",
-    email: "nguyenthithao@gmail.com",
-    status: true,
+    "name": "Nguyễn Thị Linh",
+    "gender": false,
+    "phoneNumber": "09747343886",
+    "address": "Số 131 Nguyễn Trãi, Thanh Xuân",
+    "score": 10000,
+    "status": true
   },
   {
-    name: "Bùi Văn Đoan",
-    position: "Nhân viên",
-    gender: true,
-    phoneNumber: "0973354956",
-    email: " buivandoan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Bùi Thị Thu",
-    position: "Nhân viên",
-    gender: true,
-    phoneNumber: "0973354956",
-    email: "buithithu@gmail.com",
-    status: true,
-  },
-  {
-    name: "Đoàn Thị Trang",
-    position: "Nhân viên",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "doanthitrang@gmail.com",
-    status: true,
-  },
-  {
-    name: "Hoàng Thị Linh",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0973354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-  {
-    name: "Tạ Hoàng An",
-    position: "Giám đốc",
-    gender: true,
-    phoneNumber: "0977354956",
-    email: "tahoangan@gmail.com",
-    status: true,
-  },
-];
+    "name": "Phạm Thị Mai",
+    "gender": false,
+    "phoneNumber": "03488948855",
+    "address": "Số 8 Lê Trọng Tấn, Hoàng Mai",
+    "score": 1100,
+    "status": true
+  }
+];  
 export default function Page() {
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -247,12 +168,12 @@ export default function Page() {
       </div>
       <div className="table">
         <div className="table-row table-heading">
-          <div className="table-column">Stt</div>
-          <div className="table-column">Tên tài khoản</div>
-          <div className="table-column">Chức vụ</div>
+          <div className="table-column">STT</div>
+          <div className="table-column">Tên người dùng</div>
           <div className="table-column">Giới tính</div>
           <div className="table-column">Số điện thoại</div>
-          <div className="table-column">Email</div>
+          <div className="table-column">Địa chỉ</div>
+          <div className="table-column">Điểm hiện có</div>
           <div className="table-column">Trạng thái</div>
           <div className="table-column">Thao tác</div>
         </div>
@@ -266,13 +187,13 @@ export default function Page() {
               >
                 {acc.name}
               </div>
-              <div className="table-column">{acc.position}</div>
               <div className="table-column">
                 {acc.gender && "Nam"}
                 {!acc.gender && "Nữ"}
               </div>
               <div className="table-column">{acc.phoneNumber}</div>
-              <div className="table-column">{acc.email}</div>
+              <div className="table-column">{acc.address}</div>
+              <div className="table-column">{acc.score}</div>
               <div className="table-column">
                 {acc.status && "Kích hoạt"}
                 {!acc.status && "Chưa kích hoạt"}
@@ -282,32 +203,31 @@ export default function Page() {
                   src="/icon/tabler_edit.svg"
                   alt="edit"
                   width={24}
-                  height={24}
-                  onClick={getDetail}
-                />
-                <Image
-                  src="/icon/mdi_trash.svg"
-                  alt="trash"
-                  width={24}
-                  height={24}
-                  onClick={handleDelete}
-                />
+                  height={24}onClick={getDetail}
+                  />
+                  <Image
+                    src="/icon/mdi_trash.svg"
+                    alt="trash"
+                    width={24}
+                    height={24}
+                    onClick={handleDelete}
+                  />
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-      <Pagination
-        defaultCurrent={1}
-        total={2}
-        defaultPageSize={20}
-        showSizeChanger={false}
-        style={{
-          marginTop: "20px",
-          display: "flex",
-          justifyContent: "flex-end",
-        }}
-      />
-    </section>
-  );
-}
+            );
+          })}
+        </div>
+        <Pagination
+          defaultCurrent={1}
+          total={2}
+          defaultPageSize={20}
+          showSizeChanger={false}
+          style={{
+            marginTop: "20px",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        />
+      </section>
+    );
+  }

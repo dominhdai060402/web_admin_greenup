@@ -68,7 +68,7 @@ export default function Page() {
           }}
         >
           <Image
-            src="/img/doctor/hoang_an.jpg"
+            src="/img/hoang_an.png"
             width={211}
             height={211}
             style={{

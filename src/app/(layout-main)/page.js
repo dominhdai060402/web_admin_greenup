@@ -14,7 +14,7 @@ export default function page() {
               <h3>5,123</h3>
             </div>
             <div className="item-heading-icon">
-              <Image
+            <Image
                 src="/icon/dash_broad_1.svg"
                 alt=""
                 width={35}
@@ -32,8 +32,8 @@ export default function page() {
         <div className="statistical-content-one-item">
           <div className="item-heading">
             <div className="item-heading-content">
-              <p>Lượng lịch đặt</p>
-              <h3>480</h3>
+              <p>Lượng tích điểm - đổi quà</p>
+              <h3>280</h3>
             </div>
             <div className="item-heading-icon">
               <Image
@@ -52,15 +52,15 @@ export default function page() {
               alt="image"
             />
             <p>
-              <span>1.8%</span> so với tuần trước
+              <span>1.2%</span> so với tuần trước
             </p>
           </div>
         </div>
         <div className="statistical-content-one-item">
           <div className="item-heading">
             <div className="item-heading-content">
-              <p>Tổng lịch đặt thành công</p>
-              <h3>420</h3>
+              <p>Lượng rác thu thu gom</p>
+              <h3>239</h3>
             </div>
             <div className="item-heading-icon">
               <Image
@@ -79,13 +79,13 @@ export default function page() {
               alt="image"
             />
             <p>
-              <span>4.3%</span> so với tuần trước
+              <span>2.3%</span> so với tuần trước
             </p>
           </div>
         </div>
       </div>
       <div className="statistical-content-two">
-        <h2 className="statistical-content-two-heading">Lịch đặt trong tuần</h2>
+        <h2 className="statistical-content-two-heading">Đổi quà trong tháng 10/2024</h2>
         <Image
           src="/img/dashbroad/db_img_1.svg"
           width={1024}
@@ -93,37 +93,9 @@ export default function page() {
           style={{ boxShadow: "0 0 4px rgba(0,0,0,0.2)", borderRadius: "22px" }}
           alt="image"
         />
-        <div className="statistical-content-two-wrapper">
-          <Image
-            src="/img/dashbroad/db_img_2.svg"
-            width={557}
-            height={297}
-            style={{
-              boxShadow: "0 0 4px rgba(0,0,0,0.2)",
-              borderRadius: "22px",
-            }}
-            alt="image"
-          />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-            }}
-          >
-            <h3>Chi Tiết Lịch Đặt</h3>
-            <Image
-              src="/img/dashbroad/db_img_3.svg"
-              width={444}
-              height={254}
-              style={{
-                boxShadow: "0 0 4px rgba(0,0,0,0.2)",
-                borderRadius: "22px",
-              }}
-              alt="image"
-            />
-          </div>
-        </div>
+        
+         
+       
       </div>
     </section>
   );

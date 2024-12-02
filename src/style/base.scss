@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
 }
 a {
@@ -22,15 +22,15 @@ textarea {
   width: 100%;
   border: none;
   outline: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
 }
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
 }
 label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -38,7 +38,7 @@ label {
   width: fit-content;
   color: $BROWN_500;
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
 }

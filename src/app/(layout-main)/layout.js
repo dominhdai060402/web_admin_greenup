@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
             <ConfigProvider
               theme={{
                 token: {
-                  colorPrimary: "#911A1D",
-                  fontFamily: "Roboto",
+                  colorPrimary: "#22AA56",
+                  fontFamily: "Nunito Sans",
                 },
                 components: {
                   DatePicker: {
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                     itemBg: "transparent",
                     subMenuItemBg: "transparent",
                     activeBarBorderWidth: 0,
-                    itemSelectedBg: "rgba(145, 26, 29, 0.05)",
+                    itemSelectedBg: "rgba(212, 246, 225, 0.05)",
                     itemBorderRadius: 0,
                   },
                 },

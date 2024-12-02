@@ -41,7 +41,7 @@ export default function Login() {
     if (loading) {
       let flag = true;
       if (
-        email === "buiquangtruong1105@gmail.com" &&
+        email === "kieuuyen@gmail.com" &&
         password === "Admin123@"
       ) {
         flag = false;
@@ -79,7 +79,7 @@ export default function Login() {
       <div className="overlay"></div>
       <section className="login-section">
         <Image
-          src="/icon/logo_duong_ban.svg"
+          src="/icon/logo_duong_ban.png"
           width={184}
           height={121}
           alt="image"

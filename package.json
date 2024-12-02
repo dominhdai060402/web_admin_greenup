@@ -11,7 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.3.6",
     "@ckeditor/ckeditor5-react": "^6.3.0",
-    "antd": "^5.16.2",
+    "antd": "^5.22.2",
     "ckeditor5-custom-build": "file:src/ckeditor5",
     "cookies-next": "^4.1.1",
     "dayjs": "^1.11.11",

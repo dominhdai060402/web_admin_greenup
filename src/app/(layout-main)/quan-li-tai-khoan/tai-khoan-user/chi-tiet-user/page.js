@@ -100,7 +100,7 @@ export default function Page() {
             }}
           >
             <Image
-              src="/img/user_avatar.jpg"
+              src="/img/user_avatar.png"
               width={211}
               height={211}
               style={{ borderRadius: "10px", marginTop: "36px" }}
@@ -259,92 +259,7 @@ export default function Page() {
             </div>
           </form>
         </div>
-        <div>
-          <div>
-            <h3 className="title" style={{ marginBottom: "26px" }}>
-              Danh sách thú cưng
-            </h3>
-            <button
-              style={{ border: 0 }}
-              className="add-btn"
-              onClick={() => {
-                setPopupShow(true);
-              }}
-            >
-              + Thêm thú cưng
-            </button>
-          </div>
-          <AddNewPet popupShow={popupShow} setPopupShow={setPopupShow} />
-          <EditAPet
-            popupEditShow={popupEditShow}
-            setPopupEditShow={setPopupEditShow}
-            data={editShowData}
-          />
-          <div className="list-pets">
-            {currentUser?.pets?.length === 0 ? (
-              <p>Bạn hiện chưa thêm thông tin thú cưng nào</p>
-            ) : (
-              <>
-                <div className="table">
-                  <div className="table-row  pet-table table-row--brown">
-                    <div className="table-col">Stt</div>
-                    <div className="table-col">Hình ảnh</div>
-                    <div className="table-col">Tên thú cưng</div>
-                    <div className="table-col">Chủng loại</div>
-                    <div className="table-col">Giới tính</div>
-                    <div className="table-col">Giống loài</div>
-                    <div className="table-col">Hành động</div>
-                  </div>
-                  {currentUser &&
-                    currentUser?.pets?.map((pet, index) => {
-                      return (
-                        <div className="table-row  pet-table" key={pet.id}>
-                          <div className="table-col">{index + 1}</div>
-                          <div className="table-col">
-                            <img
-                              src={pet.petImg}
-                              alt=""
-                              style={{
-                                width: 130,
-                                height: 86,
-                                objectFit: "cover",
-                              }}
-                            />
-                          </div>
-                          <div className="table-col">{pet.petName}</div>
-                          <div className="table-col">{pet.petSpecies}</div>
-                          <div className="table-col">
-                            {pet.petGender ? "Đực" : "Cái"}
-                          </div>
-                          <div className="table-col">{pet.petType}</div>
-                          <div
-                            className="table-col"
-                            style={{ display: "flex", gap: "8px" }}
-                          >
-                            <img
-                              src="/icon/tabler_edit.svg"
-                              alt=""
-                              style={{ width: "30px" }}
-                              onClick={() => {
-                                setEditShowData(pet);
-                                setPopupEditShow(true);
-                              }}
-                            />
-                            <img
-                              src="/icon/mdi_trash.svg"
-                              alt=""
-                              style={{ width: "30px" }}
-                              onClick={showModal}
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
-                </div>
-              </>
-            )}
-          </div>
-        </div>
+        
         <div
           className=""
           style={{ display: "flex", justifyContent: "space-between" }}

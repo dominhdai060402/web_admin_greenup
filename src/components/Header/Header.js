@@ -24,7 +24,7 @@ export default function Header() {
     <header>
       <div className="header-wrapper">
         <Image
-          src="/icon/logo_duong_ban.svg"
+          src="/icon/logo_duong_ban.png"
           width={137}
           height={79}
           alt="image"
@@ -52,20 +52,20 @@ export default function Header() {
               <h3>Thông báo</h3>
               <div className="container">
                 <a
-                  href="/quan-li-lich-dat/lich-tham-kham/c0ff9b00-ef1b-4ccc-ab50-d00da91e6f24"
+                  href="/quan-li-doi-thuong"
                   className="menu-item"
                 >
                   <span className="content">
-                    Có lịch đặt thăm khám mới từ khách hàng: Bùi Quang Trưởng
+                    Bạn đang có một một yêu cầu đổi quà!     
                   </span>
-                  <span className="time">2024-04-13</span>
+                  <span className="time">2024-04-12</span>
                 </a>
                 <a
-                  href="/quan-li-lich-dat/lich-tham-kham/52e503bc-2732-4cc8-91b6-3104617bfd63"
+                  href="/quan-li-tin-tuc"
                   className="menu-item"
                 >
                   <span className="content">
-                    Có lịch đặt thăm khám mới từ khách hàng: Bùi Quang Trưởng
+                    Bạn có một tin tức mới!
                   </span>
                   <span className="time">2024-04-19</span>
                 </a>
@@ -77,13 +77,13 @@ export default function Header() {
             style={{ display: "flex", gap: "9px", alignItems: "center" }}
           >
             <Image
-              src="/img/doctor/hoang_an.jpg"
+              src="/img/doctor/hoang_an.png"
               width={62}
               height={62}
               style={{ borderRadius: "50%", objectFit: "cover" }}
               alt="image"
             />
-            <p>Tạ hoàng an</p>
+            <p>Tạ Hoàng An</p>
             <Image
               src="/icon/carret_down.svg"
               width={20}
