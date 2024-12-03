@@ -106,11 +106,11 @@ export default function Page() {
               style={{ borderRadius: "10px", marginTop: "36px" }}
             />
             <h3
-              style={{ fontSize: "20px", color: "#911A1D", marginTop: "10px" }}
+              style={{ fontSize: "20px", color: "#22AA56", marginTop: "10px" }}
             >
-              Tạ Hoàng An
+              Đỗ Nhật Long
             </h3>
-            <p style={{ marginTop: "10px" }}>tahoangan@gmail.com</p>
+            <p style={{ marginTop: "10px" }}>03823376446</p>
           </div>
           <form
             action=""
@@ -124,7 +124,8 @@ export default function Page() {
             <div className="input-row">
               <div className="input-group">
                 <label htmlFor="">Tên tài khoản</label>
-                <input type="text" placeholder="Tạ Hoàng An" />
+                <input type="text" placeholder="Nhập tên tài khoản"
+                defaultValue="Đỗ Nhật Long" />
               </div>
             </div>
             <div className="">
@@ -159,7 +160,7 @@ export default function Page() {
                       marginRight: "10px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Nam
@@ -173,7 +174,7 @@ export default function Page() {
                       margin: "0 10px 0 20px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Nữ
@@ -187,23 +188,11 @@ export default function Page() {
                       margin: "0 10px 0 20px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Khác
                 </label>
-              </div>
-            </div>
-            <div className="input-row">
-              <div className="input-group">
-                <label htmlFor="">Email</label>
-                <input type="text" placeholder="tahoangan@gmail.com" />
-              </div>
-            </div>
-            <div className="input-row">
-              <div className="input-group">
-                <label htmlFor="">Số điện thoại</label>
-                <input type="text" placeholder="0921334999" />
               </div>
             </div>
             <div className="input-row">
@@ -217,10 +206,24 @@ export default function Page() {
                     border: "1px solid rgba(0, 0, 0, 0.4)",
                     borderRadius: 7,
                   }}
-                  defaultValue={dayjs("06-06-1992", "DD-MM-YYYY")}
+                  defaultValue={dayjs("29-04-1999", "DD-MM-YYYY")}
                 />
               </div>
             </div>
+            <div className="input-row">
+              <div className="input-group">
+                <label htmlFor="">Số điện thoại</label>
+                <input type="text" placeholder="Nhập số điện thoại..." 
+                defaultValue="03823376446"/>
+              </div>
+            </div>   
+            <div className="input-row">
+              <div className="input-group">
+                <label htmlFor="">Địa chỉ: </label>
+                <input type="text" placeholder="Nhập địa chỉ..."
+                defaultValue="Số 91 Định Công, Hoàng Mai, Hà Nội" />
+              </div>
+            </div>   
             <div style={{ marginBottom: "15px" }}>
               <div style={{ marginBottom: "15px", fontWeight: "600" }}>
                 Kích hoạt
@@ -236,7 +239,7 @@ export default function Page() {
                       marginRight: "10px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Kích hoạt
@@ -250,7 +253,7 @@ export default function Page() {
                       margin: "0 10px 0 20px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Không kích hoạt
@@ -268,9 +271,9 @@ export default function Page() {
             style={{
               width: "200px",
               height: "45px",
-              border: "1px solid #911A1D",
+              border: "1px solid #22AA56",
               borderRadius: "7px",
-              background: "#911A1D",
+              background: "#22AA56",
               fontWeight: "600",
               color: "white",
               cursor: "pointer",
@@ -286,11 +289,11 @@ export default function Page() {
             style={{
               width: "200px",
               height: "45px",
-              border: "1px solid #911A1D",
+              border: "1px solid #22AA56",
               borderRadius: "7px",
               background: "white",
               fontWeight: "600",
-              color: "#911A1D",
+              color: "#22AA56",
               cursor: "pointer",
             }}
             onClick={handleBack}

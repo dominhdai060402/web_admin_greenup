@@ -41,8 +41,8 @@ export default function Login() {
     if (loading) {
       let flag = true;
       if (
-        email === "kieuuyen@gmail.com" &&
-        password === "Admin123@"
+        email === "admin@gmail.com" &&
+        password === "123456"
       ) {
         flag = false;
         setCookie("isLogin", "true");

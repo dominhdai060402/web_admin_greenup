@@ -77,7 +77,7 @@ export default function Page() {
               objectFit: "cover",
             }}
           />
-          <h3 style={{ fontSize: "20px", color: "#911A1D", marginTop: "10px" }}>
+          <h3 style={{ fontSize: "20px", color: "#22AA56", marginTop: "10px" }}>
             Tạ Hoàng An
           </h3>
           <p style={{ marginTop: "10px" }}>tahoangan@gmail.com</p>
@@ -91,7 +91,8 @@ export default function Page() {
             <div className="input-row">
               <div className="input-group">
                 <label htmlFor="">Tên tài khoản</label>
-                <input type="text" placeholder="Bùi Quang Trưởng" />
+                <input type="text" placeholder="Nhập tên tài khoản..."
+                defaultValue="Tạ Hoàng An"  />
               </div>
             </div>
             <div className="">
@@ -126,7 +127,7 @@ export default function Page() {
                       marginRight: "10px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Nam
@@ -140,7 +141,7 @@ export default function Page() {
                       margin: "0 10px 0 20px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Nữ
@@ -154,7 +155,7 @@ export default function Page() {
                       margin: "0 10px 0 20px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Khác
@@ -164,13 +165,15 @@ export default function Page() {
             <div className="input-row">
               <div className="input-group">
                 <label htmlFor="">Email</label>
-                <input type="text" placeholder="buiquangtruong@gmail.com" />
+                <input type="text" placeholder="Nhập email..."
+                defaultValue="tahoangan@gmail.com" />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
                 <label htmlFor="">Số điện thoại</label>
-                <input type="text" placeholder="0746238999" />
+                <input type="text" placeholder="Nhập số điện thoại"
+                defaultValue="03823376446" />
               </div>
             </div>
             <div className="input-row">
@@ -184,14 +187,40 @@ export default function Page() {
                     border: "1px solid rgba(0, 0, 0, 0.4)",
                     borderRadius: 7,
                   }}
-                  defaultValue={dayjs("11-05-2002", "DD-MM-YYYY")}
+                  defaultValue={dayjs("19-02-1997", "DD-MM-YYYY")}
                 />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
+                <label htmlFor="">Địa chỉ: </label>
+                <input type="text" placeholder="Nhập địa chỉ..." 
+                defaultValue="380 Lê Trọng Tấn, Hoàng Mai, Hà Nội"/>
+              </div>
+            </div>
+            <div className="input-row">
+              <div className="input-group">
                 <label htmlFor="">Chức vụ</label>
-                <input type="text" placeholder="Bác sĩ" />
+                <Select
+                  placeholder="Chọn chức vụ"
+                  style={{
+                    width: 444,
+                    height: 40,
+                    border: "1px solid rgba(0, 0, 0, 0.4)",
+                    borderRadius: 7,
+                  }}
+                  options={[
+                    {
+                      value: "admin",
+                      label: "Quản trị",
+                    },
+                    {
+                      value: "user",
+                      label: "Giám đốc",
+                    },
+                  ]}
+                  defaultValue="Quản trị"
+                />
               </div>
             </div>
             <div className="input-row">
@@ -208,14 +237,14 @@ export default function Page() {
                   options={[
                     {
                       value: "admin",
-                      label: "Quản trị",
+                      label: "Admin",
                     },
                     {
                       value: "user",
                       label: "Người dùng",
                     },
                   ]}
-                  defaultValue="Quản trị"
+                  defaultValue="Admin"
                 />
               </div>
             </div>
@@ -223,8 +252,8 @@ export default function Page() {
               <div className="input-group">
                 <label htmlFor="">Mật khẩu</label>
                 <Input.Password
-                  defaultValue="buiquangtruong"
-                  placeholder="*********"
+                  defaultValue="admin"
+                  placeholder="123456"
                   style={{
                     width: 444,
                     height: 40,
@@ -232,24 +261,6 @@ export default function Page() {
                     borderRadius: 10,
                   }}
                 />
-              </div>
-            </div>
-            <div className="input-row">
-              <div className="input-group">
-                <label htmlFor="">Tài khoản Facebook</label>
-                <input type="text" placeholder="https://abc.com" />
-              </div>
-            </div>
-            <div className="input-row">
-              <div className="input-group">
-                <label htmlFor="">Tài khoản Instagram</label>
-                <input type="text" placeholder="https://abc.com" />
-              </div>
-            </div>
-            <div className="input-row">
-              <div className="input-group">
-                <label htmlFor="">Tài khoản Tiktok</label>
-                <input type="text" placeholder="https://abc.com" />
               </div>
             </div>
             <div style={{ marginBottom: "15px" }}>
@@ -267,7 +278,7 @@ export default function Page() {
                       marginRight: "10px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Kích hoạt
@@ -281,7 +292,7 @@ export default function Page() {
                       margin: "0 10px 0 20px",
                       width: "24px",
                       height: "24px",
-                      accentColor: "#911a1d",
+                      accentColor: "#22AA56",
                     }}
                   />
                   Không kích hoạt
@@ -294,9 +305,9 @@ export default function Page() {
               style={{
                 width: "200px",
                 height: "45px",
-                border: "1px solid #911A1D",
+                border: "1px solid #22AA56",
                 borderRadius: "7px",
-                background: "#911A1D",
+                background: "#22AA56",
                 fontWeight: "600",
                 color: "white",
                 cursor: "pointer",
@@ -309,11 +320,11 @@ export default function Page() {
               style={{
                 width: "200px",
                 height: "45px",
-                border: "1px solid #911A1D",
+                border: "1px solid #22AA56",
                 borderRadius: "7px",
                 background: "white",
                 fontWeight: "600",
-                color: "#911A1D",
+                color: "#22AA56",
                 cursor: "pointer",
               }}
               onClick={handleBack}

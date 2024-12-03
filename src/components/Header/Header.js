@@ -52,7 +52,7 @@ export default function Header() {
               <h3>Thông báo</h3>
               <div className="container">
                 <a
-                  href="/quan-li-doi-thuong"
+                  href="/doi-qua"
                   className="menu-item"
                 >
                   <span className="content">
@@ -77,7 +77,7 @@ export default function Header() {
             style={{ display: "flex", gap: "9px", alignItems: "center" }}
           >
             <Image
-              src="/img/doctor/hoang_an.png"
+              src="/img/hoang_an.png"
               width={62}
               height={62}
               style={{ borderRadius: "50%", objectFit: "cover" }}
