@@ -17,19 +17,19 @@ const currentUser = {
     {
       id: uuidv4(),
       petImg: "/img/petAva/pet_img_1.jpg",
-      petName: "John",
-      petSpecies: "dog",
-      petType: "chihuahua",
-      petOld: "2",
+      petName: " ",
+      petSpecies: " ",
+      petType: " ",
+      petOld: " ",
       petGender: true,
     },
     {
       id: uuidv4(),
       petImg: "/img/petAva/pet_img_2.jpg",
-      petName: "Mii",
-      petSpecies: "cat",
-      petType: "mèo anh",
-      petOld: "3",
+      petName: " ",
+      petSpecies: " ",
+      petType: " ",
+      petOld: " ",
       petGender: true,
     },
   ],
@@ -68,14 +68,14 @@ export default function Page() {
   return (
     <section className="section">
       <Modal
-        title="Xóa thông tin thú cưng"
+        title=" "
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
         okText="Đồng ý"
         cancelText="Hủy"
       >
-        <p>Bạn có chắc chắn muốn xóa thông tin thú cưng?</p>
+        <p> </p>
       </Modal>
       <h1 className="section-heading">
         QUẢN LÝ TÀI KHOẢN/ USER/ THÔNG TIN TÀI KHOẢN

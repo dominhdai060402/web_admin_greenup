@@ -2,8 +2,8 @@ import ToastifyContainer from "../ToastifyContainer";
 import "./global.scss";
 
 export const metadata = {
-  title: "Petpals - Chữa lành từ trái tim",
-  description: "Petpals",
+  title: "Web-Admin-Greenup",
+  description: "Greenup",
 };
 
 export default function RootLayout({ children }) {

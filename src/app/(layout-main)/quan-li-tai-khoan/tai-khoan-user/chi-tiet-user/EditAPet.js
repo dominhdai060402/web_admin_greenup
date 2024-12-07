@@ -23,7 +23,7 @@ export default function EditAPet({ popupEditShow, setPopupEditShow, data }) {
         className={`add-new-pet-pop-up ${popupEditShow && "open"}`}
         onSubmit={handleSubmit}
       >
-        <h2>Chỉnh sửa thông tin thú cưng</h2>
+        <h2>  </h2>
         <div
           className="close-icon"
           onClick={() => {
@@ -43,7 +43,7 @@ export default function EditAPet({ popupEditShow, setPopupEditShow, data }) {
                 <label htmlFor="">Tên thú cưng:</label>
                 <input
                   type="text"
-                  placeholder="Nhập tên thú cưng"
+                  placeholder=" "
                   style={{ width: 675, height: 40, padding: "0 20px" }}
                   value={data?.petName}
                 />
@@ -51,7 +51,7 @@ export default function EditAPet({ popupEditShow, setPopupEditShow, data }) {
             </div>
             <div className="input-row">
               <div className="input-group">
-                <label htmlFor="">Chủng loại:</label>
+                <label htmlFor=""> </label>
                 <Select
                   defaultValue={data?.petSpecies}
                   style={{
@@ -63,40 +63,40 @@ export default function EditAPet({ popupEditShow, setPopupEditShow, data }) {
                   }}
                   options={[
                     {
-                      value: "dog",
-                      label: "Chó",
+                      value: " ",
+                      label: " ",
                     },
                     {
-                      value: "cat",
-                      label: "Mèo",
+                      value: " ",
+                      label: " ",
                     },
                     {
-                      value: "other",
-                      label: "Khác",
+                      value: " ",
+                      label: " ",
                     },
                   ]}
                 />
               </div>
               <div className="input-group">
-                <label htmlFor="">Giống loài</label>
+                <label htmlFor=""> </label>
                 <input
                   type="text"
-                  placeholder="Giống loài"
+                  placeholder=" "
                   value={data?.petType}
                 />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
-                <label htmlFor="">Tuổi:</label>
+                <label htmlFor=""> </label>
                 <input
                   type="text"
-                  placeholder="Nhập tuổi"
+                  placeholder=" "
                   value={data?.petOld}
                 />
               </div>
               <div className="input-group">
-                <label htmlFor="">Giới tính</label>
+                <label htmlFor=""> </label>
                 <Select
                   value={data?.petGender}
                   style={{
@@ -109,11 +109,11 @@ export default function EditAPet({ popupEditShow, setPopupEditShow, data }) {
                   options={[
                     {
                       value: true,
-                      label: "Đực",
+                      label: " ",
                     },
                     {
                       value: false,
-                      label: "Cái",
+                      label: " ",
                     },
                   ]}
                 />

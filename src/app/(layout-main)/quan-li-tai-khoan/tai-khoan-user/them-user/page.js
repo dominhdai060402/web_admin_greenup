@@ -44,14 +44,14 @@ export default function Page() {
   return (
     <section className="section">
       <Modal
-        title="Xóa thông tin thú cưng"
+        title=" "
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
         okText="Đồng ý"
         cancelText="Hủy"
       >
-        <p>Bạn có chắc chắn muốn xóa thông tin thú cưng?</p>
+        <p> </p>
       </Modal>
       <h1 className="section-heading">
         QUẢN LÝ TÀI KHOẢN/ USER/ TẠO TÀI KHOẢN

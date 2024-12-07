@@ -42,7 +42,7 @@ export default function Login() {
       let flag = true;
       if (
         email === "admin@gmail.com" &&
-        password === "123456"
+        password === "A123456@"
       ) {
         flag = false;
         setCookie("isLogin", "true");

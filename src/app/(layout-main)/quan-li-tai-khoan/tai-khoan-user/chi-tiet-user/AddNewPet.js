@@ -23,7 +23,7 @@ export default function AddNewPet({ popupShow, setPopupShow }) {
         className={`add-new-pet-pop-up ${popupShow && "open"}`}
         onSubmit={handleSubmit}
       >
-        <h2>Thêm mới một thú cưng</h2>
+        <h2> </h2>
         <div
           className="close-icon"
           onClick={() => {
@@ -35,24 +35,24 @@ export default function AddNewPet({ popupShow, setPopupShow }) {
         <div className="col-wrapper">
           <div className="col-left">
             <img src="/img/grey-img-3.svg" alt="" />
-            <button type="button">Thêm ảnh</button>
+            <button type="button"> </button>
           </div>
           <div className="col-right">
             <div className="input-row">
               <div className="input-group">
-                <label htmlFor="">Tên thú cưng:</label>
+                <label htmlFor=""> </label>
                 <input
                   type="text"
-                  placeholder="Nhập tên thú cưng"
+                  placeholder=" "
                   style={{ width: 675, height: 40, padding: "0 20px" }}
                 />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
-                <label htmlFor="">Chủng loại:</label>
+                <label htmlFor="">  </label>
                 <Select
-                  defaultValue="dog"
+                  defaultValue=" "
                   style={{
                     width: 328,
                     height: 40,
@@ -62,32 +62,32 @@ export default function AddNewPet({ popupShow, setPopupShow }) {
                   }}
                   options={[
                     {
-                      value: "dog",
-                      label: "Chó",
+                      value: " ",
+                      label: " ",
                     },
                     {
-                      value: "cat",
-                      label: "Mèo",
+                      value: " ",
+                      label: " ",
                     },
                     {
-                      value: "other",
-                      label: "Khác",
+                      value: " ",
+                      label: " ",
                     },
                   ]}
                 />
               </div>
               <div className="input-group">
-                <label htmlFor="">Giống loài</label>
-                <input type="text" placeholder="Giống loài" />
+                <label htmlFor="">  </label>
+                <input type="text" placeholder=" " />
               </div>
             </div>
             <div className="input-row">
               <div className="input-group">
-                <label htmlFor="">Tuổi:</label>
-                <input type="text" placeholder="Nhập tuổi" />
+                <label htmlFor=""> </label>
+                <input type="text" placeholder=" " />
               </div>
               <div className="input-group">
-                <label htmlFor="">Giới tính</label>
+                <label htmlFor=""> </label>
                 <Select
                   defaultValue={true}
                   style={{
@@ -100,11 +100,11 @@ export default function AddNewPet({ popupShow, setPopupShow }) {
                   options={[
                     {
                       value: true,
-                      label: "Đực",
+                      label: " ",
                     },
                     {
                       value: false,
-                      label: "Cái",
+                      label: " ",
                     },
                   ]}
                 />
